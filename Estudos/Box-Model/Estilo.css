@@ -1,0 +1,32 @@
+.container{
+    background-color: #577;
+    width: 400px;
+    border: 20px ridge red;
+    border-radius: 20px;
+    /* border: 20px ridge gray; */
+
+    /* padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px; */
+
+    /* top, right, bottom e left*/
+    /* padding: 20px 10px 20px 10px; */
+
+    /* top e bottom - right e left */
+    /* padding: 20px 10px; */
+
+    /* Todos */
+    padding: 10px;
+
+    /* Estudos de Margin */
+    /* margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    margin-right: 20px; */
+
+    /* margin: 20px 10px 20px 10px; */
+
+    margin: 30px 15px;
+
+}

@@ -1,0 +1,42 @@
+body{
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: black;
+    line-height:1.6;
+    background-color:palegreen;  
+}
+.bloco{
+    margin: auto;
+    width: 970px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.card{
+    float: left;
+    padding: 10px;
+    background-color: whitesmoke;
+    margin-bottom: 10px;
+    border-radius: 25px;
+}
+.card img{
+    float: left;
+    margin: 10px;
+}
+.button{
+    text-decoration: none;
+    background-color: green;
+    padding: 10px;
+    border-radius: 25px;
+    color: white;
+    border: 1px solid black;
+    font-weight: bold;
+}
+.link{
+    margin-top: 20px;
+    text-align: right;
+}
+.clear{
+    clear: both;
+}

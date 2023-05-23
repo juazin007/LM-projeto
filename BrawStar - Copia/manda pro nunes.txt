@@ -1,0 +1,51 @@
+ import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		/* Declarão de Insancias de Objeto */
+		Scanner objetoScanner = new Scanner(System.in);
+		Professor objetoProfessor = new Professor();
+		Disciplina objetoDisciplina = new Disciplina();
+		Aluno objetoAluno = new Aluno();
+		Media objetoMedia = new Media();
+		
+		
+		/* Entrada */
+		System.out.println("Digite o nome do Professor(A)"
+				+ ": ");
+		objetoProfessor.setNomeProfessor(objetoScanner.next());
+
+		System.out.println("Digite o nome da Disciplina: ");
+		objetoDisciplina.setDisciplina(objetoScanner.next());
+		
+		System.out.println("Digite o nome do Aluno(A): ");
+		objetoAluno.setNomeAluno(objetoScanner.next());
+		
+		
+		System.out.println("Digite a 1°Nota: ");
+		objetoMedia.setNota1(objetoScanner.nextFloat());
+		
+		System.out.println("Digite a 2°Nota: ");
+		objetoMedia.setNota2(objetoScanner.nextFloat());
+		
+		System.out.println("Digite a 3°Nota: ");
+		objetoMedia.setNota3(objetoScanner.nextFloat());
+		
+		System.out.println("Digite a 4°Nota: ");
+		objetoMedia.setNota4(objetoScanner.nextFloat());
+		
+		
+		/* Processamento */
+		
+		/* Saida */
+		System.out.println("Nome do Professor(A): " + objetoProfessor.getNomeProfessor());
+		System.out.println("Nome do Aluno(A): " + objetoAluno.getNomeAluno());
+		System.out.println("Disciplina: " + objetoDisciplina.getDisciplina());
+		System.out.println("Média: " + objetoMedia.calcularMedia());
+		
+
+	}
+
+}

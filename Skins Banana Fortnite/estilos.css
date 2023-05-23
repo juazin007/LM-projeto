@@ -1,0 +1,53 @@
+body{
+    font-weight: 600;
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: white;
+    line-height: 1.6;
+    background-image: linear-gradient(45deg, rgb(55, 85, 97), rgb(132, 49, 187));
+}
+
+.container{
+    margin: auto;
+    width: 960px;
+    background-color: rgb(95, 95, 117);
+    padding: 20px;
+}
+
+.grid-card{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 15px;
+    padding: 10px;
+    background-color: rgb(98, 98, 117);
+    border-radius: 25px;
+    border: solid 1px violet;
+}
+
+.grid-item-1{
+    grid-column: 1 / span 4;
+}
+
+.grid-banana-1{
+    background-color: rgba(75, 75, 84, 0.591);
+    padding: 25px;
+    border-radius: 25px;
+    border: solid 1px violet;
+}
+
+.imagem{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 250px;
+    height: 300px;
+    overflow: hidden;
+}
+
+#imagem1:hover {
+    transform: scale(1.2);
+    transition: all 1s ease-in-out;
+}
+
+div{
+    margin: 10px;
+}

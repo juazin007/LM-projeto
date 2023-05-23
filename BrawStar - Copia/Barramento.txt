@@ -1,0 +1,11 @@
+Todos computadores são conectados em um mesmo barramento físico de dados(um cabo).
+Os dados não passam por dentro de cada um dos computadores, apenas uma maquina pode enviar dados no barramento por vez, os dados são enviados para todos os computadores ligados ao barramento, mas apenas o computador que é o destino dos dados recebe realmente, os outros computadores descartam esses dados.
+
+Como os dados, são enviados a toda a rede, eles viajam de um extremidade a outra do cabo. Se o sinal tiver permissão para prosseguir sem interrupção, continuará seguindo para frente e para trás ao longo do cabo, isso impede que os outros computadores enviem sinais. Portanto, o sinal deve ser interrompido depois que tiver tido a oportunidade de alcançar o endereço de destino adequado. Com função de impedir que o sinal repercuta um componente chamado terminador e colocado na extremidade do cabo
+
+Vatagem: Mais economico, pois é uma rede via cabo
+         Contém uma manutenção simplificada, permitindo acrescentar novos dispositivos sem grandes planejamentos, basta apenas conectar o novo dispositivo no barramento existente.
+
+Desvatagem: Por ser uma rede de fluxo unidirecional é mais complicado encontrar e isolar os problemas na rede. Essa caracteristica cria outro problema: o aumento de tráfego interfere diretamente na velocidade da rede, pois aumenta a colisão entre os dados até o destinatario.
+
+Quais são os barramentos: ISA, AGP, PCI, PCI-X, AMR e outros.
