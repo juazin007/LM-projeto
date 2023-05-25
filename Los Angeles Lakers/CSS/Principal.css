@@ -55,11 +55,6 @@ header a{
     padding: 1px;
 }
 
-.box{
-    box-shadow: palevioletred;
-    transition: all ease .55s;
-}
-
 .box img{
     transform: translateY(-5px) scale(1.1);
     transform: rotateX('10');

@@ -10,12 +10,14 @@ body{
 }
 
 body img{
+    margin-left: 150px;
     float: left;
+    width: 200px;
 }
 
 .menu{
+    margin: 50px 250px;
     list-style: none;
-    border: 1px solid white;
     float: left;
 }
 
@@ -43,7 +45,6 @@ body img{
     position: absolute;
     top: 25px;
     left: 0;
-    background-color: #333;
     display: none;
 }
 
@@ -53,5 +54,11 @@ body img{
 
 .menu li ul li{
     display: block;
-    width: 150px;
+    width: 100px;
+    transform:translate(1px, 35px);
+}
+
+i{
+    color: peru;
+    font-size: 50px;
 }
