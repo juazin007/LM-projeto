@@ -4,7 +4,7 @@
     --cor-click: yellow;
 }
 
-body{
+body{   
     background-color: #653780;
     text-align: center;
     font-family: 'Righteous', cursive;
@@ -63,6 +63,7 @@ header a{
 .box:hover{
     transform: translateY(-5px) scale(1.1);
     transform: rotateX('10');
+    transition: ease-in 0.5s;
 }
 
 .Fiel{
@@ -98,6 +99,10 @@ header a{
 }
 
 /* Fim Navlist */
+
+/* Inicio loja */
+
+/* Fim da loja */
 
 /* Inicio da Pagini Inicial */
 main{
@@ -201,13 +206,9 @@ main{
 /* Fim do Slide */
 
 /* Inicio anuncio */
-.gif{
-    margin: 20px;
-    transition: ease-in-out .55s;
-}
-
-.gif:hover{
-    transform: scale(1.1);
+.anuncio{
+    position: relative;
+    left: 72px;
 }
 /* Fim anuncio */
 
@@ -227,3 +228,75 @@ main{
 /* Fim dO Gallery */
 
 /* Fim da Pagini Inicial */
+
+
+/* Detalhes finais da loja */
+.btn-gradient {
+    right: 145px;
+    bottom: 40px;
+    font-size: 1em;
+    padding: 12px 25px;
+    background: #FCB827;
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    z-index: 0;
+    border-radius: 50px;
+}
+.btn-gradient::before {
+  position: absolute;
+  content: "";
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(124deg, #FCB827, #dfe404, #4a3df1, #e549f5, #ae07bf );
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(3px);
+  animation: move 20s linear infinite;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 50px;
+}
+.btn-gradient:hover::before {
+    opacity: 1; 
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+      }
+      50% {
+        background-position: 400% 0;
+      }
+      100% {
+        background-position: 0 0;
+      }
+}
+/* Detalhes finais da loja */
+
+.fim-da-pagina{
+    text-align: start;
+    position: relative;
+    background-color: rgb(39, 39, 39);
+    width: 100%;
+    padding-top: 40px;
+    padding-left: 5px;
+    color: ivory;
+}
+
+.fim-da-pagina a{
+    color: rgb(241, 158, 90);
+    text-decoration: none;
+}
+
+.copyrigth{
+    position: absolute;
+    top: 50px;
+    left: 1300px;
+}
+
+.copy{
+    text-align: center;
+}

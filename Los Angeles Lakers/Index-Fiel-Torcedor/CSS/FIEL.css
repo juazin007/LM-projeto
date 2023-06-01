@@ -1,22 +1,41 @@
 *{
-    margin: 0;
-    padding: 0;
+  margin: 0;
+}
+
+h1{
+  width: 1100px 120px;
 }
 
 body{
-    background-image: linear-gradient(190deg, #36004F, #000000, #36004F);
-    font-family: 'Righteous', cursive;
-    font-size: 12px;
+    background-color: #000000;
+    color: #fff
 }
 
-body img{
-    margin-left: 150px;
-    float: left;
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+    transition: all ease .55s;
+}
+
+header img{
+    margin: 0px 0px 0px 50px;
     width: 200px;
 }
 
+.topo{
+    color: #000000;
+}
+
 .menu{
-    margin: 50px 250px;
+    margin: 75px 500px 0px 0px;
     list-style: none;
     float: left;
 }
@@ -26,25 +45,38 @@ body img{
     float: left;
 }
 
+.menu li a i:not(.bx-basketball){
+    color: #653780;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+    font-size: 35px;
+    transform:translate(1px, -35px);
+}
+
+.menu li a i:hover{
+    color: #FCB827;
+    -moz-window-shadow: 0 3px 10px 0 #FCB827;
+    text-shadow: 0px 0px 5px #FCB827;
+}
+
 .menu li a{
-    color: white;
+    color: #653780;
     text-decoration: none;
     padding: 5px 10px;
     display: block;
 }
 
 .menu li a:hover{
-    background: #333;
-    color: #fff;
-    -moz-window-shadow: 0 3px 10px 0 #CCC;
-    -webkit-box-shadow:0 3px 10px 0 #ccc;
-    text-shadow: 0px 0px 5px #fff;
+    color: #FCB827;
+    -moz-window-shadow: 0 3px 10px 0 #FCB827;
+    text-shadow: 0px 0px 5px #FCB827;
 }
 
 .menu li ul{
     position: absolute;
     top: 25px;
-    left: 0;
+    left: -30px;
     display: none;
 }
 
@@ -55,10 +87,126 @@ body img{
 .menu li ul li{
     display: block;
     width: 100px;
-    transform:translate(1px, 35px);
 }
 
-i{
-    color: peru;
+.bx-basketball{
+    color: #FCB827;
     font-size: 50px;
+    transform:translate(1px, -35px);
+}
+
+.h-main{
+    display: flex;
+    font-size: 25px;
+}
+
+
+.content{
+  margin-top: 150px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  gap: 1rem;
+}
+
+.content-text h1{
+    position: center;
+    font-size: 100px;
+    line-height: 1.3;
+    font-weight:0;
+}
+
+/* teste no titulo */
+.title{
+  margin-left: 200px;
+    color: #fff; 
+    font-family: "Courier";
+    font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 11em;
+    animation: type 3s steps(70, end); 
+  }
+  
+  .title:nth-child(2){
+    animation: type2 3s steps(70, end);
+  }
+  
+  span{
+    animation: blink 2s infinite;
+  }
+  
+  @keyframes type{ 
+    from { width: 0; } 
+  } 
+  
+  @keyframes type2{
+    from { width: 0; } 
+  } 
+
+  @keyframes type3{
+    0%{width: 0;}
+    50%{width: 0;}
+    100%{ width: 25; } 
+  } 
+  
+  @keyframes blink{
+    to{opacity: 1.0;}
+  }
+  
+/* fim do teste no titulo */
+
+/* Planos */
+.planos{
+  background-color: #13001f;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 300px;
+}
+
+.titulo-planos{
+  grid-column: 1 / 3 span;
+  width: 725px;
+  text-align: center;
+}
+/* Fim do Planos */
+
+/* Parceiros */
+.Parceiros{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(44, 44, 44);
+  gap: 30px;
+  
+}
+
+.contatos{
+  grid-column: 1 / span 2;
+  font-family: 'Inter', sans-serif;
+}
+
+.copyrigth{
+  top: 90px;
+  text-align: end;
+  padding-top: 50px;
+}
+
+.title-parceiros{
+  grid-column: 1 / span 3;
+  text-align: center;
+  font-family:'Montserrat', sans-serif;;
+}
+
+.Parceiros a img{
+  width: 100px;
+  padding-left: 200px;
+}
+
+.retoque{
+  padding-top: 45px;
 }
